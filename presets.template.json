@@ -1,0 +1,37 @@
+[
+    {
+        "name": "x264 High Quality",
+        "codec": "libx264",
+        "params": {
+            "crf": 18,
+            "preset": "slow"
+        }
+    },
+    {
+        "name": "x264 Fast Encode",
+        "codec": "libx264",
+        "params": {
+            "crf": 23,
+            "preset": "veryfast"
+        }
+    },
+    {
+        "name": "NVENC High Quality",
+        "codec": "h264_nvenc",
+        "params": {
+            "preset": "p7",
+            "rc": "vbr",
+            "cq": 18,
+            "qmin": 15,
+            "qmax": 21
+        }
+    },
+    {
+        "name": "x265 High Quality",
+        "codec": "libx265",
+        "params": {
+            "crf": 22,
+            "preset": "slow"
+        }
+    }
+] 
