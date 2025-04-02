@@ -19,7 +19,8 @@ ENCODE_SETTINGS = {
     'output_suffix': '_done',    # Will be added before the extension
     'output_extension': '.mp4',  # New file extension
     'presets': [DEFAULT_PRESET], # Initialize with default preset
-    'preset_file': 'presets.json'  # Name of the preset file
+    'preset_file': '.presets.json',  # Name of the preset file
+    'merged_audio_codec': 'aac'  # Audio codec used when merging tracks
 }
 
 def load_encoding_presets():
@@ -251,7 +252,7 @@ def encode_video(input_file, cached_settings=None, file_index=0):
                     # Set audio mapping and encoding
                     cmd_config['audio_settings'] = [
                         '-map', '[aout]',
-                        '-c:a', 'aac'
+                        '-c:a', ENCODE_SETTINGS['merged_audio_codec']
                     ]
         
         else:
