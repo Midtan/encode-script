@@ -19,7 +19,7 @@ ENCODE_SETTINGS = {
     'output_suffix': '_done',    # Will be added before the extension
     'output_extension': '.mp4',  # New file extension
     'presets': [DEFAULT_PRESET], # Initialize with default preset
-    'preset_file': '.presets.json',  # Name of the preset file
+    'preset_file': 'presets.json',  # Name of the preset file
     'merged_audio_codec': 'aac'  # Audio codec used when merging tracks
 }
 
